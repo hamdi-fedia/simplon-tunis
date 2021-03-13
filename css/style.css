@@ -40,7 +40,7 @@ body{
  /******************************navbar*********************************/
 .barnav .logo{
     margin-top: 18px;
-    width: 25%;
+    width: 20%;
 }
 .barnav li{
     border-bottom: 2px solid transparent ;
@@ -79,7 +79,6 @@ body{
 }
 #img-font .img-f{
     width: 200px;
-    margin-left: 8rem;
 }
 /************************apropos**************/
 h1{
@@ -100,8 +99,8 @@ h1{
 }
 .border-carre{
     border: 20px solid var(--prancipal-color) ;
-    width: 30rem;
-    height: 15rem;
+    width: 85%;
+    height: 90%;
     margin-left: 6rem;
     margin-top: 2rem;
     position: relative;
@@ -122,7 +121,7 @@ h1{
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover;
-   height: 500px;
+   height: 700px;
 }
 .bg-impact h1{
     color: white;
@@ -156,7 +155,15 @@ h1{
 }
 
 /*************************histo*************/
-/** timeline box structure **/
+.histo{
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.4)), url('../img/img-2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px;
+}
+
+
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
@@ -169,21 +176,9 @@ h1{
     position: absolute;
     content: " ";
     width: 3px;
-    background-color: #eee;
+    background-color: rgb(221, 221, 221);
     left: 50%;
     margin-left: -1.5px;
-  }
-  
-  .tldate {
-    display: block;
-    width: 200px;
-    background: var(--theme-color);
-    color: var(--white-color);
-    margin: 0 auto;
-    padding: 10px 0 10px 0 ;
-    font-weight: bold;
-    text-align: center;
-    -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
   }
   
   .timeline li {
@@ -207,8 +202,8 @@ h1{
   .timeline li .timeline-panel {
     width: 46%;
     float: left;
-    background: #fff;
-    border: 1px solid #d4d4d4;
+    background: rgba(255, 255, 255, 0.589);
+    border: 1px solid #c0c0c0;
     padding: 20px;
     position: relative;
     -webkit-border-radius: 8px;
@@ -226,8 +221,8 @@ h1{
     right: -15px;
     display: inline-block;
     border-top: 15px solid transparent;
-    border-left: 15px solid #ccc;
-    border-right: 0 solid #ccc;
+    border-left: 15px solid rgb(187, 187, 187);
+    border-right: 0 solid rgb(167, 167, 167);
     border-bottom: 15px solid transparent;
     content: " ";
   }
@@ -238,8 +233,8 @@ h1{
     right: -14px;
     display: inline-block;
     border-top: 14px solid transparent;
-    border-left: 14px solid #fff;
-    border-right: 0 solid #fff;
+    border-left: 14px solid var(--grey-bg-color);
+    border-right: 0 solid var(--grey-bg-color);
     border-bottom: 14px solid transparent;
     content: " ";
   }
@@ -273,15 +268,15 @@ h1{
   .timeline .tl-circ {
     position: absolute;
     top: 23px;
-    left: 50%;
+    left: 49.9%;
     text-align: center;
-    background: #6a8db3;
+    background: var(--prancipal-color);
     color: #fff;
     width: 35px;
     height: 35px;
     line-height: 35px;
     margin-left: -16px;
-    border: 3px solid #90acc7;
+    border: 3px solid var(--prancipal-color);
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -294,7 +289,7 @@ h1{
   
   .tl-heading h4 {
     margin: 0;
-    color: #c25b4e;
+    color: var(--prancipal-color);
   }
   
   .tl-body p, .tl-body ul {
@@ -318,6 +313,7 @@ h1{
     ul.timeline:before {
       left: 40px;
     }
+
     
     .tldate { width: 140px; }
   
@@ -356,11 +352,63 @@ h1{
     }
   }
 
-
+@media screen and (max-width: 360px) {
+  #img-font .front{
+    height: 250px;
+  }
+  #img-font .card-text {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .img-apropos{
+    height: 190px;
+  }
+  .border-carre{
+    display: none;
+  }
+  .text-apropos {
+    border: 2px solid var(--prancipal-color);
+    background-color: var(--white-color);
+    margin: 0;
+    position: static;
+    margin-top: 10px;
+    padding: 2rem 1rem 3rem;
+}
+h1{
+  font-size: 30px;
+}
+.bg-impact h1 {
+  font-size: 30px;
+}
+.card-chifre{
+  background-color: var(--white-color);
+  border-radius: 5px;
+  padding: 2rem 0 2rem  0;
+  width: 80%;
+}
+.card-chifre:hover{
+  background-color: var(--grey-bg-color);
+}
+.chifre{
+  text-align: center;
+  color: var(--prancipal-color);
+  font-weight: 900;
+  font-size: 30px;
+  border-radius: 50%;
+  padding-bottom: 20px;
+}
+.disc{
+  text-align: center;
+  font-size: 20px;
+  color: var(--text-color);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
   /**********************footer***********************/
   footer{
     background-color: var(--grey-bg-color) !important;
-    
   }
   .btn-simplon{
     background-color: var(--prancipal-color);
@@ -374,7 +422,7 @@ h1{
     font-weight: 500;
   }
   .logo-footer{
-    width: 19rem;
+    width: 15rem;
     margin-bottom: 20px;
   }
   footer p{
@@ -382,7 +430,12 @@ h1{
     line-height: 1.5;
     color: var(--text-color);
   }
-
+.icon-f{
+  margin-left: 1rem;
+}
+.icon-f:hover{
+  color: var(--theme-color);
+}
   .btn-outline-simplon {
     color: var(--prancipal-color);
     border-color: var(--prancipal-color);
