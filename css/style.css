@@ -359,6 +359,48 @@ h1{
 
   /**********************footer***********************/
   footer{
-    background-color: var(--grey-bg-color);
+    background-color: var(--grey-bg-color) !important;
     
   }
+  .btn-simplon{
+    background-color: var(--prancipal-color);
+  }
+  .bord{
+    border-top: 5px solid  var(--prancipal-color);
+  }
+  .copy{
+    background-color: var(--prancipal-color) !important;
+    color: var(--white-color);
+    font-weight: 500;
+  }
+  .logo-footer{
+    width: 19rem;
+    margin-bottom: 20px;
+  }
+  footer p{
+    padding: 0 44px 25px 0;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  .btn-outline-simplon {
+    color: var(--prancipal-color);
+    border-color: var(--prancipal-color);
+  }
+  .btn-outline-simplon:hover {
+    color: var(--white-color);
+    background-color: var(--prancipal-color);
+    border-color: var(--white-color);
+  }
+  .btn-check:focus + .btn-outline-simplon, .btn-outline-simplon:focus {
+    box-shadow: 0 0 0 0.25rem rgba(119, 16, 39, 0.5);
+  }
+  .btn-check:checked + .btn-outline-simplon, .btn-check:active + .btn-outline-simplon, .btn-outline-simplon:active, .btn-outline-simplon.active, .btn-outline-simplon.dropdown-toggle.show {
+    color: var(--white-color);
+    background-color: var(--prancipal-color);
+    border-color: var(--white-color);
+  }
+  .btn-check:checked + .btn-outline-simplon:focus, .btn-check:active + .btn-outline-simplon:focus, .btn-outline-simplon:active:focus, .btn-outline-simplon.active:focus, .btn-outline-simplon.dropdown-toggle.show:focus {
+    box-shadow: 0 0 0 0.25rem rgba(119, 16, 39, 0.5);
+  }
+ 
