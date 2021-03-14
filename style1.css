@@ -137,29 +137,15 @@ ul{
 a{
     text-decoration: none;
 }
-.bg1{
-    margin:3rem 0rem 3rem 3rem;
-    padding:1rem;
-    text-align: justify;
-    background-color:var(--secondary-color);    
-    color:white;
-    box-shadow: 5px 5px 8px #888888;
 
-  
-}
-
-.bg2{
-background-color:rgb(8, 6, 6);
-padding:5rem;
-color:white;
-clip-path: polygon(25% 0%, 100% 0%, 78% 100%, 0% 100%);
-text-align: center;
-}
+/*----------------logo devenir formateur----*/
 
 .log{
     width:80%;
     margin-top:12rem;
 }
+
+/*-------------background-banner devenir formateur ---*/
 .bg3{
  background-color: var(--secondary-color);
  height:80vh;
@@ -167,33 +153,7 @@ text-align: center;
  color:white;
 }
 
-@media screen and (max-width: 630px) {
-   .bg3{
-      height:5px;
-      background-color: var(--secondary-color);
-      color:white;
-
-     
-   }
-   bg3 a h2{
-      
-      font-size:1px;
-   }
-   .content{
-      transform: translateX(50%);
-      transform: translatey(1%);
-   
-   }
-   .content h2{
-      margin-top: 1px;
-   }
- }
- 
-
-
-
-
-
+/*------------------position contenu bannner--------*/
 
 .content{
    transform: translateX(50%);
@@ -201,56 +161,76 @@ text-align: center;
 
 }
 
-.content h2 {
-   font-size:1.5rem;
-   font-weight: bolder;
+
+/*-------title -devenir formateur--*/
+.content  a h2 {
    color:white;
-
-}
-.srcoll-icon a{
-   color:white;
-   margin-top:5rem;
-  
-      animation: animationFrames linear 1s;
-      animation-iteration-count: infinite;
-   }  
-    @keyframes animationFrames{
-      0% {
-        transform:  translatey(0rem)  ;
-        opacity: 0.1;
-      }
-      100% {
-        transform:  translatey(1rem)  ;
-        opacity: 1;
-      }
-    }
-    
-   
-
-
-.content h2{
-
+   font-size:2.5rem;
    font-weight: bold;
    animation:animationopac ease-in 6s;
    animation-iteration-count: 5s;
+   transition: 0.3;
 }
+
+/*------------animation du titre h2--------*/
 
 @keyframes animationopac{
    0% {
-      transform: scale(0.5)  ;
+     transform:scale(0.5);
      opacity: 0.1;
    }
-   100% {
-   transition: 0.5;
-     transform: scale(1.5)  ;
-     opacity: 1;
+   100%{
+    
+      transform:tscale(1);
+
+     opacity:1;
    }
  }
 
+/*-------- style icon scroll-down-----------*/
+ .srcoll-icon a {
+   color:white;
+   margin-top:4rem;
+   font-size:3rem;
+   animation: animationFrames linear 1s;
+   animation-iteration-count: infinite;
+   }  
+
+/*-------- animation icon scroll-down-----------*/
+
+
+    @keyframes animationFrames{
+      0% {
+        transform:  translatey(0rem)  ;
+        opacity: 0.05;
+      }
+      50% {
+        transform:  translatey(0.5rem)  ;
+        opacity: 0.2;
+      }
+      100% {
+         transform:  translatey(1rem)  ;
+         opacity: 1;
+       }
+    }
+/*-----------------paragraphe devenir formateur -----*/  
  #formateur h2{
     font-weight: bold;
  }
 
+/*---------------background paragraphe--------*/
+ .bg1{
+   
+   padding:1rem;
+   text-align: justify;
+   background-color:var(--secondary-color);    
+   color:white;
+   box-shadow: 5px 5px 8px #888888;
+
+ 
+}
+
+/*-----------carte temps de travail ----*/
 .modalité1{
 
    box-shadow: 5px 5px 5px #888888;
@@ -260,6 +240,7 @@ text-align: center;
    color:white;
 
 }
+/*-----------carte contrat ----*/
 
 .modalité{
    height: 20%;
@@ -281,7 +262,7 @@ text-align: center;
    background-image: url(simplontunisie.png);
    background-size: cover;
    background-attachment: fixed;
-   padding:10rem 0rem; 
+   padding:7rem 0rem; 
    text-orientation: center;
    margin-top:8rem;
 }
@@ -289,3 +270,70 @@ text-align: center;
 .margin{
    margin:6rem 0rem;
 }
+
+
+
+
+
+@media screen and (max-width: 630px) {
+   .bg3{
+      height:40vh;
+      background-color: var(--secondary-color);
+      color:white;
+
+     
+   }
+   .bg3 a h2{
+      
+      font-size:1.2rem;
+   }
+   .content{
+      transform: translateX(50%);
+      transform: translatey(50%);
+   
+   }
+   
+   .srcoll-icon a{
+      color:white;
+      margin-top:5px;
+      animation: animationFrames linear 1s;
+      animation-iteration-count: infinite;
+      font-size:1.5rem;
+      } 
+
+      #formateur h2{
+         font-size:1.2rem;
+      }
+      #formateur ul li{
+         font-size:0.9rem;
+
+      }
+      
+      .log{
+         display: none;
+     }
+  
+     .modalité1{
+        margin:auto;
+        font-size:1rem;
+
+     }
+     .modalité{
+        margin:auto;
+        font-size:1rem;
+
+     }
+     .container h2{
+        font-size:1.5rem;
+        text-align: center;
+        font-weight:bold;
+     }
+
+     .container iframe{
+        margin-left:30px;
+        width:280px;
+        height:220px;
+        
+     }
+ }
+ 
