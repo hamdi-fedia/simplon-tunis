@@ -199,12 +199,12 @@ a{
 }
 
 .bg5{
-   background-image: url(../img/simplontunisie.png);
+   background-image: url(../img/_DSC7678.jpg);
    background-size: cover;
    background-attachment: fixed;
-   padding:7rem 0rem; 
+   padding:3rem 0rem; 
    text-orientation: center;
-   margin-top:8rem;
+   margin-top:5rem;
 }
 
 .margin{
@@ -273,4 +273,13 @@ a{
         
      }
  }
- 
+ .color-text{
+    color: var(--prancipal-color);
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+ }
+ .col-ti{
+    color: var(--white-color);
+    font-size: 50px;
+ }

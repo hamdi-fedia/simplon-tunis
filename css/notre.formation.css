@@ -337,3 +337,7 @@ height: 25rem; }
 #img-d b{
   color: var(--prancipal-color);
 }
+
+.bg-impact b {
+  color: var(--prancipal-color);
+}

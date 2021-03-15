@@ -111,10 +111,10 @@ h1{
 .text-apropos{
     border: 2px solid var(--prancipal-color);
     background-color: var(--white-color);
-    margin: 0rem 9.5rem 0rem 3rem ;
+    margin: 0rem 7rem 0rem 3rem ;
     padding: 2rem 1rem 5rem ;
     position: absolute;
-    top: 58rem;
+    top: 57.5rem;
 }
 
 /****************************impact***************/
@@ -543,8 +543,13 @@ h1{
 	filter: grayscale(0);
   transform: translateY(-10px);
   }
+  .img-part-m{
+    width: 70%;
+    height: 150px;
+  }
   .img-part{
     width: 70%;
+    height: 190px;
   }
   .img-part-s{
     width: 70%;
