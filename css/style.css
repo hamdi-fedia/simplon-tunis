@@ -1,4 +1,3 @@
-
 :root {
     --theme-color: #000;
     --secondary-color:#a4082f ;
@@ -10,6 +9,7 @@
 }
 body{
     overflow-x: hidden;
+    font-family: var(--font-title) !important;
 }
 .topnav{
     background-color: var(--grey-bg-color); 
@@ -72,6 +72,7 @@ body{
 }
 #img-font .card-text{
     margin-top: 65px;
+    margin-bottom: 8%;
     font-weight: 700;
     font-family: var(--font-title);
     color: var(--white-color);
@@ -84,8 +85,9 @@ body{
 h1{
     font-family: var(--font-title);
     text-align: center;
-    margin-top: 2rem;
-    font-size: 70px;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 50px;
     font-weight: 540;
    
 }
@@ -100,7 +102,7 @@ h1{
 .border-carre{
     border: 20px solid var(--prancipal-color) ;
     width: 85%;
-    height: 90%;
+    height: 85%;
     margin-left: 6rem;
     margin-top: 2rem;
     position: relative;
@@ -109,10 +111,10 @@ h1{
 .text-apropos{
     border: 2px solid var(--prancipal-color);
     background-color: var(--white-color);
-    margin: 0rem 7.5rem 0rem 3rem ;
+    margin: 0rem 9.5rem 0rem 3rem ;
     padding: 2rem 1rem 5rem ;
     position: absolute;
-    top: 60rem;
+    top: 58rem;
 }
 
 /****************************impact***************/
@@ -121,12 +123,12 @@ h1{
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover;
-   height: 700px;
+   height: 550px;
 }
 .bg-impact h1{
     color: white;
     padding-top: 2rem;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 540;
 }
 .card-chifre{
@@ -137,6 +139,7 @@ h1{
 }
 .card-chifre:hover{
     background-color: var(--grey-bg-color);
+    transform: translateY(-15px);
 }
 .chifre{
     text-align: center;
@@ -160,7 +163,7 @@ h1{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 700px;
+  height: 800px;
 }
 
 
@@ -202,7 +205,7 @@ h1{
   .timeline li .timeline-panel {
     width: 46%;
     float: left;
-    background: rgba(255, 255, 255, 0.589);
+    background: rgba(255, 255, 255, 0.603);
     border: 1px solid #c0c0c0;
     padding: 20px;
     position: relative;
@@ -233,8 +236,8 @@ h1{
     right: -14px;
     display: inline-block;
     border-top: 14px solid transparent;
-    border-left: 14px solid var(--grey-bg-color);
-    border-right: 0 solid var(--grey-bg-color);
+    border-left: 14px solid rgba(153, 153, 153, 0.589);
+    border-right: 0 solid rgba(153, 153, 153, 0.589);
     border-bottom: 14px solid transparent;
     content: " ";
   }
@@ -255,7 +258,6 @@ h1{
     left: -15px;
     right: auto;
   }
-  
   .timeline li.timeline-inverted .timeline-panel:after {
     border-left-width: 0;
     border-right-width: 14px;
@@ -283,12 +285,18 @@ h1{
     border-bottom-left-radius: 50%;
     z-index: 99999;
   }
-  
-  
+  .tl-body{
+    color: var(--theme-color) !important;
+    font-weight: 700;
+  }
+ .text-muted{
+   color: rgb(36, 28, 28) !important;
+ }
   /** timeline content **/
   
-  .tl-heading h4 {
+  .tl-heading h2 {
     margin: 0;
+    font-weight: 700;
     color: var(--prancipal-color);
   }
   
@@ -375,6 +383,9 @@ h1{
     margin-top: 10px;
     padding: 2rem 1rem 3rem;
 }
+.bg-impact{
+  height: 700px;
+}
 h1{
   font-size: 30px;
 }
@@ -409,6 +420,10 @@ h1{
   padding-left: 20px;
   padding-right: 20px;
 }
+.team-img {
+  width: 100%;
+  
+}
 }
   /**********************footer***********************/
   footer{
@@ -416,7 +431,9 @@ h1{
   }
   .btn-simplon{
     background-color: var(--prancipal-color);
+    color: var(--white-color);
   }
+  
   .bord{
     border-top: 5px solid  var(--prancipal-color);
   }
@@ -430,8 +447,8 @@ h1{
     margin-bottom: 20px;
   }
   footer p{
-    padding: 0 44px 25px 0;
-    line-height: 1.5;
+    padding: 0 45px 25px 0;
+    line-height: 2;
     color: var(--text-color);
   }
 .icon-f{
@@ -460,4 +477,205 @@ h1{
   .btn-check:checked + .btn-outline-simplon:focus, .btn-check:active + .btn-outline-simplon:focus, .btn-outline-simplon:active:focus, .btn-outline-simplon.active:focus, .btn-outline-simplon.dropdown-toggle.show:focus {
     box-shadow: 0 0 0 0.25rem rgba(119, 16, 39, 0.5);
   }
- 
+  footer .form-control{
+    border: 1px solid #ce0033;
+
+  }
+  footer .form-control:focus{
+    box-shadow: 0 0 0 0.25rem rgba(119, 16, 39, 0.5);
+    border-color:rgba(119, 16, 39, 0.5) ;
+  }
+  footer .fas{
+    color: var(--prancipal-color);
+  }
+  footer b {
+    font-weight: 100 !important;
+    padding: 5px;
+    line-height: 2;
+  }
+  footer b:hover{
+    font-weight: bold !important;
+  }
+  footer .text-uppercase{
+    border-left: 2px solid var(--prancipal-color) ;
+    padding-left: 10px;
+  }
+  footer a {
+    text-decoration: none;
+  }
+  footer li {
+    line-height: 3;
+    font-weight: 500;
+  }
+  footer li:hover{
+    font-weight: bold;
+  }
+ /****************************information*****************/
+  .bg-information{
+    background-color: var(--prancipal-color);
+  }
+
+  .text-information{
+    color: var(--white-color);
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .btn-light{
+    color: var(--prancipal-color);
+    font-weight: 700;
+  }
+  .btn-light:hover{
+    transform: translateY(-10px);
+  }
+  .img-info{
+    width: 30%;
+  }
+/**************************partenaires***************/
+  .partenaires img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  }
+
+  .partenaires img:hover{
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+  transform: translateY(-10px);
+  }
+  .img-part{
+    width: 70%;
+  }
+  .img-part-s{
+    width: 70%;
+  }
+/************************team************************/
+.team-img {
+    padding: 5px;
+    box-shadow: 0px 0px 11px 0px #989898;
+
+}
+
+.view {
+  width: 100%;
+  height: 244px;
+  float: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.second-effect:hover .mask {
+  opacity: 1;
+  border: 32px solid rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.45);
+}
+.second-effect .mask {
+  opacity: 0;
+  overflow: visible;
+  border: 0px solid rgba(0,0,0,0.7);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.view .mask, .view .content {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.view, .view .mask, .view .content {
+  width: 100%;
+  height: 244px;
+}
+.mask p{
+    color: var(--white-color); 
+    font-weight: 500;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.social{
+  padding-top: 30px;
+}
+.social i{
+  margin: 10px;
+  font-size: 25px;
+  color: var(--prancipal-color);
+}
+.social i:hover{
+  color: var(--white-color);
+  transform: translateY(-3px);
+}
+.equipe h4{
+  color: var(--text-color);
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+.equipe h4::before{
+  content: "__";
+  color: var(--prancipal-color);
+}
+
+/*****************************temo**********************/
+ .temo .card {
+    padding: 20px 20px;
+    position: relative;
+    background: #fff;
+    border-top: 10px solid var(--prancipal-color);
+    border-radius: 30px 10px 10px !important;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+ }
+
+ .temo img {
+  position: absolute;
+  bottom: -40px;
+  left: 20px;
+  width: 80px;
+  border-radius: 50%;
+  padding: 6px;
+  background: #fff;
+}
+.temo .card-body{
+ position: relative;
+ flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+.temo .card-body span {
+  font-size: 30px;
+  color: #ebebeb;
+}
+.temo h3.card-title{
+  font-size: 22px;
+    line-height: 28px;
+    color: var(--prancipal-color);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.temo p.sub-title {
+  font-size: 16px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+.temo p.card-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+.temo .text-right {
+  text-align: right !important;
+}
+
+.img-hayder{
+  height: 100%;
+}
